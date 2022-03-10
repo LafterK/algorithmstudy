@@ -5,6 +5,7 @@
  */
 function solution(priorities, location) {
   // hash를 쓰는 키 아이디어 -> 인쇄작업의 중요도가 1~9 사이로 한정적임 (T(n) = 10n 으로 단축가능)
+  // 교훈: 문제에 키 아이디어가 있을 때가 많다, 문제를 잘 읽자!
   const hash = priorities.reduce((prev, cur, i) => {
     if (prev[cur] == null) {
       prev[cur] = 0;
